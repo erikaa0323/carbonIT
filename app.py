@@ -11,7 +11,7 @@ st.set_page_config(
 
 @st.cache_resource
 def load_model():
-    return joblib.load("ecopulse_model.joblib")
+    return joblib.load("ecopulse_model_compressed.joblib")
 
 model = load_model()
 
