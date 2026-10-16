@@ -2,6 +2,11 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import sklearn
+import sys
+
+print("PYTHON:", sys.version)
+print("SCIKIT-LEARN:", sklearn.__version__)
 
 st.set_page_config(
     page_title="EcoPulse Iași",
@@ -113,8 +118,3 @@ if submitted:
 st.divider()
 st.caption("EcoPulse Iași | Prototip educațional pentru hackathon")
 
-import sklearn
-import sys
-
-print("PYTHON:", sys.version)
-print("SCIKIT-LEARN:", sklearn.__version__)
