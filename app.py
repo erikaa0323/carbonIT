@@ -20,6 +20,12 @@ def load_model():
 
 model = load_model()
 
+st.write("Versiune scikit-learn:", sklearn.__version__)
+st.write("Versiune Python:", sys.version)
+
+imputer = model.named_steps["imputer"]
+st.write("Atributele imputerului:", list(imputer.__dict__.keys()))
+
 st.title("🌿 EcoPulse Iași")
 st.subheader("Înțelege impactul emisiilor vehiculului tău")
 
