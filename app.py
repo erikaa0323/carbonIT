@@ -112,3 +112,9 @@ if submitted:
 
 st.divider()
 st.caption("EcoPulse Iași | Prototip educațional pentru hackathon")
+
+import sklearn
+import sys
+
+print("PYTHON:", sys.version)
+print("SCIKIT-LEARN:", sklearn.__version__)
