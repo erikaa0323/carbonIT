@@ -9,8 +9,7 @@ print("PYTHON:", sys.version)
 print("SCIKIT-LEARN:", sklearn.__version__)
 
 st.set_page_config(
-    page_title="EcoPulse Iași",
-    page_icon="🌿",
+    page_title="CarbonIT Movement",
     layout="centered"
 )
 
@@ -26,7 +25,7 @@ st.write("Versiune Python:", sys.version)
 imputer = model.named_steps["imputer"]
 st.write("Atributele imputerului:", list(imputer.__dict__.keys()))
 
-st.title("🌿 EcoPulse Iași")
+st.title("CarbonIT Movement")
 st.subheader("Înțelege impactul emisiilor vehiculului tău")
 
 st.write(
@@ -122,5 +121,5 @@ if submitted:
     )
 
 st.divider()
-st.caption("EcoPulse Iași | Prototip educațional pentru hackathon")
+st.caption("CarbonIT Movement | Prototip educațional pentru hackathon")
 
